@@ -1,13 +1,19 @@
 import React from "react";
 import "./Sidebar.css";
-import {FaBloggerB} from 'react-icons/fa'
-import { FcHome, FcAbout, FcServices,FcContacts,FcPortraitMode } from "react-icons/fc";
-import Logo from "../../assets/logo.svg";
+import { FaBloggerB } from "react-icons/fa";
+import {
+  FcHome,
+  FcAbout,
+  FcServices,
+  FcContacts,
+  FcPortraitMode,
+} from "react-icons/fc";
+import Logo from "../../assests/logo.png";
 
 const Sidebar = () => {
   return (
     <aside className="aside">
-      <a href="/home" className="nav_logo">
+      <a href="#home" className="nav_logo">
         <img src={Logo} alt="" srcset="" />
       </a>
 
@@ -34,18 +40,18 @@ const Sidebar = () => {
             </li>
             <li className="nav_item">
               <a href="#portfolio" className="nav_link">
-                <FcPortraitMode/>
+                <FcPortraitMode />
               </a>
             </li>
             <li className="nav_item">
               <a href="#blog" className="nav_link">
-                <FaBloggerB/>
+                <FaBloggerB />
               </a>
             </li>
-            
+
             <li className="nav_item">
-            FcContacts <a href="#contact" className="nav_link">
-                <FcContacts/>
+              <a href="#contact" className="nav_link">
+                <FcContacts />
               </a>
             </li>
           </ul>
